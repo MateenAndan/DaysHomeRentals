@@ -11,7 +11,7 @@ email varchar(50),
 contact bigint(10) NOT NULL,
 PRIMARY KEY(Landlord_id)
 );
-insert into Landlord(pname,gender,email,`password`,contact) values('Alhassan Andani', 'Male', 'alhasan@gmail.com', '827ccb0eea8aaasfs6c4c34a16891f84e7b','0543554340');
+-- insert into Landlord(pname,gender,email,`password`,contact) values('Alhassan Andani', 'Male', 'alhasan@gmail.com', '827ccb0eea8aaasfs6c4c34a16891f84e7b','0543554340');
 
 CREATE TABLE tenant(
   Tenant_id int(10) AUTO_INCREMENT,
@@ -23,7 +23,7 @@ CREATE TABLE tenant(
   nationality varchar(50) NOT NULL,
   PRIMARY KEY (Tenant_id)
 );
-insert into tenant(pname,gender,email,`password`,contact,nationality) values('Denzel Owoo', 'Male', 'denzel@gmail.com', '827ccb0eea8afafs6c4c34a16891f84e7b','0240248083','Ghanaian');
+-- insert into tenant(pname,gender,email,`password`,contact,nationality) values('Denzel Owoo', 'Male', 'denzel@gmail.com', '827ccb0eea8afafs6c4c34a16891f84e7b','0240248083','Ghanaian');
 
 create table addProperty(
 PropertyId int(10) AUTO_INCREMENT ,
@@ -40,7 +40,7 @@ price decimal(6,2),
 primary key (PropertyId),
 foreign key(Landlord_id) references Landlord(Landlord_id)
 );
-insert into addProperty(location,category,houseNo,rooms,kitchen,lroom,bathrooms,pdescription,price) values ( 'Laterbiokoshie', 'House','205','4','Yes','Yes','3','Simple and Elegant',300.0);
+-- insert into addProperty(location,category,houseNo,rooms,kitchen,lroom,bathrooms,pdescription,price) values ( 'Laterbiokoshie', 'House','205','4','Yes','Yes','3','Simple and Elegant',300.0);
 
 
 create table Reservation(
