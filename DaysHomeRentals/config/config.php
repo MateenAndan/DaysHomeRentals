@@ -1,6 +1,6 @@
 <?php 
 
-$db = new mysqli('localhost','root','','homerents',3307);
+$db = new mysqli('localhost','root','admin','homerents');
 
 if($db->connect_error){
 	echo "Error connecting database";
